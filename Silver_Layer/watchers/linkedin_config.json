@@ -1,0 +1,21 @@
+{
+  "vault_path": "../..",
+  "check_interval": 600,
+  "linkedin_credentials": {
+    "note": "In production, use OAuth2 credentials here",
+    "access_token": "YOUR_ACCESS_TOKEN",
+    "client_id": "YOUR_CLIENT_ID",
+    "client_secret": "YOUR_CLIENT_SECRET"
+  },
+  "monitoring": {
+    "track_comments": true,
+    "track_messages": true,
+    "track_mentions": true,
+    "track_post_engagement": true
+  },
+  "engagement_thresholds": {
+    "min_likes_to_notify": 10,
+    "min_comments_to_notify": 3,
+    "notify_on_message": true
+  }
+}

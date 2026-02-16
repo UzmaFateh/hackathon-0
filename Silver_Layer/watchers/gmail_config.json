@@ -1,0 +1,18 @@
+{
+  "vault_path": "../..",
+  "check_interval": 300,
+  "gmail_credentials": {
+    "note": "In production, use OAuth2 credentials here",
+    "client_id": "YOUR_CLIENT_ID",
+    "client_secret": "YOUR_CLIENT_SECRET"
+  },
+  "filters": {
+    "skip_spam": true,
+    "skip_promotions": true,
+    "only_unread": true
+  },
+  "routing_hints": {
+    "urgent_keywords": ["urgent", "asap", "immediate"],
+    "client_keywords": ["client", "customer", "proposal"]
+  }
+}
