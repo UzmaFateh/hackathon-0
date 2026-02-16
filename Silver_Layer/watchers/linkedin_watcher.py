@@ -12,7 +12,8 @@ from datetime import datetime
 class LinkedInWatcher:
     def __init__(self, config_path):
         self.config = self.load_config(config_path)
-        self.vault_path = Path(self.config.get('vault_path', '../..'))
+        # Resolve vault path to absolute path (3 levels up from this script)
+        self.vault_path = Path(__file__).parent.parent.parent.resolve()
         self.inbox_folder = self.vault_path / "Inbox"
         self.check_interval = self.config.get('check_interval', 600)  # 10 minutes default
 
