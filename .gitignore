@@ -1,0 +1,64 @@
+# .gitignore for AI Employee Vault
+
+# Ignore sensitive files
+*.env
+*.key
+*secret*
+*password*
+*credentials*
+
+# Ignore personal data
+/Accounting/*
+!/Accounting/_template_*.md
+/Logs/*
+!/Logs/_template_*.md
+
+# Ignore temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Ignore Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# Ignore Node modules (if using MCP servers)
+node_modules/
+package-lock.json
+
+# Ignore Obsidian workspace files (optional - comment out if you want to sync)
+.obsidian/workspace
+.obsidian/workspace.json
+
+# Keep Obsidian config
+!.obsidian/app.json
+!.obsidian/appearance.json
+!.obsidian/core-plugins.json
+!.obsidian/community-plugins.json
+
+# Ignore large files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Ignore backup files
+*.bak
+*.backup
+*_backup
+
+# Keep template files
+!*_template_*.md
+
+# Keep folder structure
+!.gitkeep
